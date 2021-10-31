@@ -1,0 +1,150 @@
+<div
+  class="auth-layout-wrap"
+  style="
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-image: url(../../../../assets//images/photo-long-1.jpg);
+  "
+>
+  <div class="auth-content">
+    <div class="card o-hidden">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="p-4">
+            <div class="auth-logo text-center mb-30">
+              <img src="../../../../assets/images/logo.png" />
+            </div>
+            <h1 class="mb-3 text-18">{{ 'LOGIN.TITLE' | translate }}</h1>
+            <span
+              ><form class="">
+                <span
+                  ><fieldset class="form-group text-12" id="__BVID__11">
+                    <legend
+                      tabindex="-1"
+                      class="bv-no-focus-ring col-form-label pt-0"
+                      id="__BVID__11__BV_label_"
+                    >
+                      Email Address
+                    </legend>
+                    <div>
+                      <input
+                        type="text"
+                        class="form-control-rounded form-control"
+                        aria-describedby="Email-feedback"
+                        email=""
+                        id="__BVID__12"
+                      />
+                      <div id="Email-feedback" class="invalid-feedback"></div>
+                      <!----><!----><!---->
+                    </div>
+                  </fieldset></span
+                >
+                <span
+                  ><fieldset class="form-group text-12" id="__BVID__14">
+                    <legend
+                      tabindex="-1"
+                      class="bv-no-focus-ring col-form-label pt-0"
+                      id="__BVID__14__BV_label_"
+                    >
+                    {{ 'LOGIN.FORGOT' | translate }}
+                    </legend>
+                    <div>
+                      <input
+                        type="password"
+                        class="form-control-rounded form-control"
+                        aria-describedby="Password-feedback"
+                        id="__BVID__15"
+                      />
+                      <div
+                        id="Password-feedback"
+                        class="invalid-feedback"
+                      ></div>
+                      <!----><!----><!---->
+                    </div>
+                  </fieldset></span
+                >
+                <button
+                routerLink="/dashboard/v1"
+                  type="button"
+                  class="btn btn-rounded btn-block mt-2 btn-primary mt-2"
+                >
+                {{ 'LOGIN.TITLE' | translate }}
+                </button>
+                <!---->
+              </form></span
+            >
+            <div class="mt-3 text-center">
+              <a href="/password/reset" class="text-muted"
+                ><u>                {{ 'LOGIN.FORGOT' | translate }}
+                </u></a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-center col-md-6"
+          style="
+            background-size: cover;
+            background-image: url('../../../../assets/images/photo-long-2.jpg');
+          "
+        >
+          <div class="pr-3 auth-right">
+            <a
+              routerLink="/auth/register"
+              class="
+                btn
+                btn-rounded
+                btn-outline-primary
+                btn-outline-email
+                btn-block
+                btn-icon-text
+              "
+            >
+              Create an account
+            </a>
+            <a
+              class="
+                btn
+                btn-rounded
+                btn-outline-primary
+                btn-outline-google
+                btn-block
+                btn-icon-text
+              "
+            >
+            {{ 'LOGIN.ADMIN' | translate }}
+            </a>
+            <a
+              class="
+                btn
+                btn-rounded
+                btn-outline-primary
+                btn-block
+                btn-icon-text
+                btn-outline-facebook
+              "
+            >
+            {{ 'LOGIN.SALES' | translate }}
+            </a>
+            <a
+              class="
+                btn
+                btn-rounded
+                btn-outline-primary
+                btn-block
+                btn-icon-text
+                btn-outline-facebook
+              "
+            >
+            {{ 'LOGIN.PURCHASE' | translate }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

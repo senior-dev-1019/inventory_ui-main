@@ -1,0 +1,61 @@
+.btn1::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    right: 5px;
+    top: 38%;
+    margin-bottom: -7px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #606266;
+    border-bottom: 5px solid #606266;
+  }
+  .footer__navigation {
+    display: flex !important;
+    align-items: center !important;
+  }
+  .magnifying-glass {
+    margin-top: 3px;
+    margin-left: 8px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #494949;
+    position: relative;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  .magnifying-glass::before{
+      content: "";
+      display: block;
+      position: absolute;
+      right: -7px;
+      bottom: -5px;
+      background: #494949;
+      width: 8px;
+      height: 4px;
+      border-radius: 2px;
+      transform: rotate(
+  45deg
+  );
+      -webkit-transform: rotate(
+  45deg
+  );
+  }
+  .btn1::a {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    right: 50px;
+    top: 38%;
+    margin-bottom: -7px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #606266;
+    border-bottom: 5px solid #606266;
+  }
+  :focus{
+      outline: none !important;
+  }

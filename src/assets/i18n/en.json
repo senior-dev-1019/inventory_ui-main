@@ -1,0 +1,112 @@
+{
+  "LOGIN": {
+    "TITLE": "Sign In",
+    "SELECT": "Change language",
+    "CREATE": "Creste Account",
+    "FORGOT": "Forget PAssword",
+    "ADMIN": "ADMIN",
+    "SALES": "Sales",
+    "PURCHASE": "Purchase"
+  },
+  "REGISTER": {
+    "TITLE": "Sign Up",
+    "EMAIL": "Sign in With Email",
+    "GOOGLE": "Sign in With Google",
+    "FACEBOOK": "Sign in With Facebook",
+    "FORGOT": "Forget PAssword",
+    "NAME": "Your Name",
+    "EMAIL_ADDRESS": "EMail Address",
+    "PASSWORD": "Password",
+    "RETYPE": "Retype Password"
+  },
+  "DASHBOARD": {
+    "TITLE": "Dashboard",
+    "VERSION": "Version 1",
+    "REVENUE": "Revenue",
+    "PURCHASE": "Purchases",
+    "SALES_RETURN": "Sales Return",
+    "PROFIT": "Profit",
+    "WEEK": "This week sales& purchases",
+    "TOP": "Top Selling Products",
+    "Last_Month ": "Last Month Sales",
+    "LAST_WEEK": "Last Week Sales",
+    "TOP_SELLING": "Top Selling Producs",
+    "MOST_SOLD": "Most Sold in Last 7 days"
+  },
+  "HEADER": {
+    "POS": "POS"
+  },
+  "PRODUCT": {
+    "TITLE": "Create Product",
+    "PRODUCT": "Product",
+    "NAME": "Name",
+    "CODE": "Code Product",
+    "CATEGORY": "Category",
+    "BRAND": "Brand",
+    "COST": "Cost",
+    "SALES": "Sales Unit",
+    "PRICE": "Price",
+    "UNIT": "PRODUCT UNIT",
+    "SUBMIT": "Submit",
+    "TAX": "Order Tax",
+    "MULTIPLE_IMAGES": "Multiple Images",
+    "LIST": "Product List",
+    "IMAGE": "IMAGE",
+    "QUANTITY": "QUANTITY",
+    "ACTION": "Action",
+    "PRINT_BARCODE": "Print Barcode"
+  },
+  "COMMON": {
+    "FILTER": "Filter",
+    "CHOOSE": "Choose Warehouse",
+    "PDF": "Pdf",
+    "ACTION": "Action",
+    "EXCEL": "Excel",
+    "IMPORT": "Import Products",
+    "CREATE": "Create",
+    "PREV": "Prev",
+    "NEXT": "Next",
+    "ROWS": "Rows Per Page:",
+    "DESCRIPTION":"Description",
+    "UPDATE": "Update",
+    "PRINT": "Print",
+    "RESET": "Reset",
+    "SIZE": "Paper Size",
+    "CATEGORY":"Category",
+    "DATE": "Date",
+    "REFERENCE": "Reference",
+    "WAREHOUSE": "Warehouse",
+    "STOCK": "Stock",
+    "TYPE": "Type",
+    "NET_COST":"Net Unit Cost",
+    "QTY":"Qty",
+    "TOTAL": "Total Products",
+    "FROM":"From Warehouse",
+    "TO":"To Warehouse",
+    "ITEMS":"Items",
+    "GRAND":"Grand Total",
+    "STATUS":"Status",
+    "DISCOUNT":"Discount",
+    "DETAIL":"Detail",
+    "TAX":"Tax",
+    "SUBTOTAL":"Subtotal",
+    "DETAILS":"Details",
+    "AMOUNT":"Amount"
+  },
+  "ADJUSTMENT": {
+    "NAME": "Adjustment",
+    "CREATE": "Create Adjustment",
+    "LIST": "Adjustment List"
+  },
+  "TRANSFER": {
+    "NAME": "Transfer",
+    "CREATE": "Create Transfer",
+    "LIST": "Transfer List"
+  },
+  "EXPENSES":{
+    "NAME":"Expenses",
+    "CATEGORY":"Expenses Category",
+    "CREATE":"Create Expenses",
+    "LIST":"Expenses List"
+  }
+}

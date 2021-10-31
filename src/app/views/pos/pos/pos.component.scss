@@ -1,0 +1,19 @@
+.example-container {
+
+   }
+  
+  .example-sidenav-content {
+    display: flex;
+      height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    width: 320px;
+    box-shadow: 0 .5rem 1rem rgba(10,2,30,.15)!important;
+     padding: 20px;
+  }
+  :focus{
+      outline: none !important;
+  }

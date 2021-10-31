@@ -1,0 +1,1768 @@
+<mat-sidenav-container class="example-container" autosize>
+  <mat-sidenav
+    #sidenav
+  
+    class="example-sidenav"
+  mode="side"
+    position="end"
+  >
+    <div
+      id="sidebar-category"
+    >
+      <header class="b-sidebar-header">
+        <button type="button" (click)="sidenav.toggle()" aria-label="Close" class="close text-dark">
+          <svg
+            viewBox="0 0 16 16"
+            width="1em"
+            height="1em"
+            focusable="false"
+            role="img"
+            aria-label="x"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi-x b-icon bi"
+          >
+            <g>
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+              ></path>
+            </g>
+          </svg></button
+        ><strong id="sidebar-category___title__" style="font-size:21px;">List of Category</strong>
+      </header>
+      <div class="b-sidebar-body">
+        <div class="px-3 py-2">
+          <div class="row" style="width: 370px;">
+            <div
+              class="
+                col-md-12
+                d-flex
+                flex-row flex-wrap
+                bd-highlight
+                list-item
+                mt-2
+              "
+            >
+              <div class="card o-hidden bd-highlight m-1 brand-Active" style="      max-width: 36%;
+    min-width: 11px;
+          ">
+                <div class="list-thumb d-flex">
+                  <img alt="" src="../../../../assets/images/faces/10.jpg" />
+                </div>
+                <div class="flex-grow-1 d-bock">
+                  <div
+                    class="
+                      card-body
+                      align-self-center
+                      d-flex
+                      flex-column
+                      justify-content-between
+                      align-items-lg-center
+                    "
+                  >
+                    <div class="item-title">All Category</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card o-hidden bd-highlight m-1" style="       max-width: 36%;
+              min-width: 11px;
+          ">
+                <img alt="" src="../../../../assets/images/faces/10.jpg" />
+                <div class="flex-grow-1 d-bock">
+                  <div
+                    class="
+                      card-body
+                      align-self-center
+                      d-flex
+                      flex-column
+                      justify-content-between
+                      align-items-lg-center
+                    "
+                  >
+                    <div class="item-title">Accessories</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card o-hidden bd-highlight m-1" style="        max-width: 36%;
+              min-width: 11px;
+          ">
+                <img alt="" src="../../../../assets/images/faces/10.jpg" />
+                <div class="flex-grow-1 d-bock">
+                  <div
+                    class="
+                      card-body
+                      align-self-center
+                      d-flex
+                      flex-column
+                      justify-content-between
+                      align-items-lg-center
+                    "
+                  >
+                    <div class="item-title">Computers</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card o-hidden bd-highlight m-1" style="      max-width: 36%;
+              min-width: 11px;
+          ">
+                <img alt="" src="../../../../assets/images/faces/10.jpg" />
+                <div class="flex-grow-1 d-bock">
+                  <div
+                    class="
+                      card-body
+                      align-self-center
+                      d-flex
+                      flex-column
+                      justify-content-between
+                      align-items-lg-center
+                    "
+                  >
+                    <div class="item-title">Jackets</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="mt-4 col-md-12">
+              <ul
+                    role="menubar"
+                    aria-disabled="false"
+                    aria-label="Pagination"
+                    class="
+                      pagination
+                      my-0
+                      gull-pagination
+                      align-items-center
+                      b-pagination
+                      justify-content-center
+                    "
+                  >
+                    <li
+                      role="presentation"
+                      aria-hidden="true"
+                      class="page-item disabled"
+                    >
+                      <span
+                        role="menuitem"
+                        aria-label="Go to first page"
+                        aria-disabled="true"
+                        class="page-link"
+                        style="border: none;"
+                        ><!----></span
+                      >
+                    </li>
+                    <li
+                      role="presentation"
+                      aria-hidden="true"
+                      class="page-item disabled"
+                    >
+                      <span
+                        role="menuitem"
+                        aria-label="Go to previous page"
+                        aria-disabled="true"
+                        class="page-link"
+                        style="border: none;"
+
+                        ><p class="list-arrow m-0">
+                          <i class="i-Arrow-Left text-40"></i></p
+                      ></span>
+                    </li>
+                    <!----><!---->
+                    <li
+                      role="presentation"
+                      class="page-item active"
+                      style="border-radius: 50%"
+                    >
+                      <button
+                        role="menuitemradio"
+                        type="button"
+                        style="border-radius: 50%"
+                        aria-label="Go to page 1"
+                        aria-checked="true"
+                        aria-posinset="1"
+                        aria-setsize="2"
+                        tabindex="0"
+                        class="page-link"
+                      >
+                        1
+                      </button>
+                    </li>
+                    <li role="presentation" class="page-item">
+                      <button
+                        role="menuitemradio"
+                        type="button"
+                        aria-label="Go to page 2"
+                        aria-checked="false"
+                        aria-posinset="2"
+                        style="border: none;"
+
+                        aria-setsize="2"
+                        tabindex="-1"
+                        class="page-link"
+                      >
+                        2
+                      </button>
+                    </li>
+                    <!----><!---->
+                    <li role="presentation" class="page-item">
+                      <button
+                        role="menuitem"
+                        type="button"
+                        tabindex="-1"
+                        aria-label="Go to next page"
+                        class="page-link"
+                        style="border: none;"
+
+                      >
+                        <p class="list-arrow m-0">
+                          <i class="i-Arrow-Right text-40"></i>
+                        </p>
+                      </button>
+                    </li>
+                    <li role="presentation" class="page-item">
+                      <button
+                        role="menuitem"
+                        type="button"
+                        tabindex="-1"
+                        aria-label="Go to last page"
+                        class="page-link"
+                        style="border: none;"
+
+                      >
+                        <!---->
+                      </button>
+                    </li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---->
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="row">
+      <div class="col-md-5">
+        <div
+          class="card card-order"
+          style="position: relative; min-height: 100%"
+        >
+          <!----><!---->
+          <div
+            class="main-header"
+            style="
+              position: relative;
+              width: 100%;
+              height: 80px;
+              box-shadow: 0 1px 15px rgb(0 0 0 / 4%), 0 1px 6px rgb(0 0 0 / 4%);
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              background: #fff;
+              z-index: 100;
+            "
+          >
+            <div class="logo">
+              <a routerLink="/dashboard/v1" class=""
+                ><img
+                  src="../../../../assets/images/logo.png"
+                  alt=""
+                  width="60"
+                  height="60"
+              /></a>
+            </div>
+            <div class="mx-auto"></div>
+            <div class="header-part-right">
+              <i class="i-Full-Screen header-icon d-none d-sm-inline-block"></i>
+              <div class="dropdown">
+                <div id="dropdown" class="dropdown b-dropdown m-md-2 btn-group">
+                  <!----><button
+                    id="dropdown__BV_toggle_"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    type="button"
+                    class="
+                      btn
+                      dropdown-toggle
+                      btn-link
+                      text-decoration-none
+                      dropdown-toggle-no-caret
+                    "
+                  >
+                    <i
+                      role="button"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      class="i-Globe text-muted header-icon"
+                    ></i>
+                  </button>
+                  <ul
+                    role="menu"
+                    tabindex="-1"
+                    aria-labelledby="dropdown__BV_toggle_"
+                    class="dropdown-menu dropdown-menu-right"
+                  >
+                    <section
+                      class="
+                        ps-container
+                        dropdown-menu-left
+                        rtl-ps-none
+                        notification-dropdown
+                        ps
+                        scroll
+                      "
+                    >
+                      <div class="menu-icon-grid">
+                        <a
+                          ><i
+                            title="en"
+                            class="flag-icon flag-icon-squared flag-icon-gb"
+                          ></i>
+                          English
+                        </a>
+                        <a
+                          ><i
+                            title="fr"
+                            class="flag-icon flag-icon-squared flag-icon-fr"
+                          ></i>
+                          <span class="title-lang">French</span></a
+                        >
+                        <a
+                          ><i
+                            title="sa"
+                            class="flag-icon flag-icon-squared flag-icon-sa"
+                          ></i>
+                          <span class="title-lang">Arabic</span></a
+                        >
+                        <a
+                          ><i
+                            title="sa"
+                            class="flag-icon flag-icon-squared flag-icon-tr"
+                          ></i>
+                          <span class="title-lang">Turkish</span></a
+                        >
+                        <a
+                          ><i
+                            title="sa"
+                            class="flag-icon flag-icon-squared flag-icon-cn"
+                          ></i>
+                          <span class="title-lang">Simplified Chinese</span></a
+                        >
+                        <a
+                          ><i
+                            title="sa"
+                            class="flag-icon flag-icon-squared flag-icon-tw"
+                          ></i>
+                          <span class="title-lang">Thaï</span></a
+                        >
+                        <a
+                          ><i
+                            title="sa"
+                            class="flag-icon flag-icon-squared flag-icon-in"
+                          ></i>
+                          <span class="title-lang">Hindi</span></a
+                        >
+                        <a
+                          ><i
+                            title="de"
+                            class="flag-icon flag-icon-squared flag-icon-de"
+                          ></i>
+                          <span class="title-lang">German</span></a
+                        >
+                        <a
+                          ><i
+                            title="es"
+                            class="flag-icon flag-icon-squared flag-icon-es"
+                          ></i>
+                          <span class="title-lang">Spanish</span></a
+                        >
+                        <a
+                          ><i
+                            title="it"
+                            class="flag-icon flag-icon-squared flag-icon-it"
+                          ></i>
+                          <span class="title-lang">Italien</span></a
+                        >
+                        <a
+                          ><i
+                            title="sa"
+                            class="flag-icon flag-icon-squared flag-icon-id"
+                          ></i>
+                          <span class="title-lang">Indonesian</span></a
+                        >
+                        <a
+                          ><i
+                            title="sa"
+                            class="flag-icon flag-icon-squared flag-icon-cn"
+                          ></i>
+                          <span class="title-lang">Traditional Chinese</span></a
+                        >
+                        <a
+                          ><i
+                            title="sa"
+                            class="flag-icon flag-icon-squared flag-icon-ru"
+                          ></i>
+                          <span class="title-lang">Russian</span></a
+                        >
+                        <a
+                          ><i
+                            title="sa"
+                            class="flag-icon flag-icon-squared flag-icon-vn"
+                          ></i>
+                          <span class="title-lang">Vietnamese</span></a
+                        >
+                      </div>
+                      <div class="ps__rail-x" style="left: 0px; bottom: 0px">
+                        <div
+                          class="ps__thumb-x"
+                          tabindex="0"
+                          style="left: 0px; width: 0px"
+                        ></div>
+                      </div>
+                      <div class="ps__rail-y" style="top: 0px; right: 0px">
+                        <div
+                          class="ps__thumb-y"
+                          tabindex="0"
+                          style="top: 0px; height: 0px"
+                        ></div>
+                      </div>
+                    </section>
+                  </ul>
+                </div>
+              </div>
+              <div class="dropdown">
+                <div
+                  id="dropdown-1"
+                  class="
+                    dropdown
+                    b-dropdown
+                    m-md-2
+                    user
+                    col
+                    align-self-end
+                    btn-group
+                  "
+                >
+                  <!----><button
+                  [matMenuTriggerFor]="menu"
+                    id="dropdown-1__BV_toggle_"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    type="button"
+                    class="
+                      btn
+                      dropdown-toggle
+                      btn-link
+                      text-decoration-none
+                      dropdown-toggle-no-caret
+                    "
+                  >
+                    <img
+                      src="../../../../assets/images/photo-wide-4.jpg"
+                      id="userDropdown"
+                      alt=""
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    />
+                  </button>
+                  <mat-menu #menu="matMenu">
+                    <button mat-menu-item>William</button>
+                    <button mat-menu-item>Profile</button>
+                    <button mat-menu-item>Logout</button>
+                  </mat-menu>
+                  
+                  <ul
+                    role="menu"
+                    tabindex="-1"
+                    aria-labelledby="dropdown-1__BV_toggle_"
+                    class="dropdown-menu dropdown-menu-right"
+                  >
+                    <div
+                      aria-labelledby="userDropdown"
+                      class="dropdown-menu-left"
+                    >
+                      <div class="dropdown-header">
+                        <i class="i-Lock-User mr-1"></i>
+                        <span>William Castillo</span>
+                      </div>
+                      <a href="/app/profile" class="dropdown-item">Profile</a>
+                      <!---->
+                      <a href="#" class="dropdown-item">Logout</a>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span
+            ><form class="">
+              <div class="card-body">
+                <!----><!---->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <span
+                      ><div
+                        role="group"
+                        class="input-group input-customer"
+                        style="margin-top: 10px"
+                      >
+                        <!---->
+                        <input
+                          class="form-control"
+                          list="datalistOptions"
+                          id="exampleDataList"
+                          placeholder="walk-in-customers"
+                        />
+                        <datalist id="datalistOptions">
+                          <option value="San Francisco"></option>
+                          <option value="New York"></option>
+                          <option value="Seattle"></option>
+                          <option value="Los Angeles"></option>
+                          <option value="Chicago"></option>
+                        </datalist>
+
+                        <div class="input-group-append">
+                          <button type="button" class="btn btn-primary">
+                            <span><i class="i-Add-User"></i></span>
+                          </button>
+                        </div>
+                        <!---->
+                      </div></span
+                    >
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <span
+                      ><fieldset class="form-group mt-2" id="__BVID__103">
+                        <!---->
+                        <div>
+                          <div
+                            dir="auto"
+                            class="v-select vs--single vs--searchable"
+                            state="true"
+                          >
+                            <div>
+                              <label for="picker1">Choose Warehouse</label>
+                              <select class="form-control">
+                                <option>Warehouse 1</option>
+                                <option>Warehouse 2</option>
+                              </select>
+                            </div>
+                            <ul
+                              id="vs2__listbox"
+                              role="listbox"
+                              style="display: none; visibility: hidden"
+                            ></ul>
+                          </div>
+                          <!----><!----><!---->
+                        </div>
+                      </fieldset></span
+                    >
+                  </div>
+                  <div class="mt-2 col-md-12">
+                    <div class="pos-detail">
+                      <div class="table-responsive">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th scope="col">Product</th>
+                              <th scope="col">Price</th>
+                              <th scope="col" class="text-center">Qty</th>
+                              <th scope="col" class="text-center">Subtotal</th>
+                              <th scope="col" class="text-center">
+                                <i class="fa fa-trash"></i>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="5">No data Available</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer_panel">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div
+                        class="grandtotal"
+                        style="
+                          text-align: center;
+                          height: 40px;
+                          background-color: #7ec8ca;
+                          margin-bottom: 20px;
+                          font-size: 1.2rem;
+                          font-weight: 800;
+                          padding: 5px;
+                        "
+                      >
+                        <span>Grand Total : $ 0.00</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                      <span
+                        ><fieldset
+                          class="form-group"
+                          append="%"
+                          id="__BVID__109"
+                        >
+                          <legend
+                            tabindex="-1"
+                            class="bv-no-focus-ring col-form-label pt-0"
+                            id="__BVID__109__BV_label_"
+                          >
+                            Tax
+                          </legend>
+                          <div>
+                            <div role="group" class="input-group">
+                              <!----><input
+                                type="text"
+                                class="form-control"
+                                aria-describedby="OrderTax-feedback"
+                                label="Order Tax"
+                                id="__BVID__110"
+                              />
+                              <div class="input-group-append">
+                                <div class="input-group-text">%</div>
+                              </div>
+                            </div>
+                            <div
+                              id="OrderTax-feedback"
+                              class="invalid-feedback"
+                            ></div>
+                            <!----><!----><!---->
+                          </div>
+                        </fieldset></span
+                      >
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                      <span
+                        ><fieldset
+                          class="form-group"
+                          append="%"
+                          id="__BVID__112"
+                        >
+                          <legend
+                            tabindex="-1"
+                            class="bv-no-focus-ring col-form-label pt-0"
+                            id="__BVID__112__BV_label_"
+                          >
+                            Discount
+                          </legend>
+                          <div>
+                            <div role="group" class="input-group">
+                              <!----><input
+                                type="text"
+                                class="form-control"
+                                aria-describedby="Discount-feedback"
+                                label="Discount"
+                                id="__BVID__113"
+                              />
+                              <div class="input-group-append">
+                                <div class="input-group-text">$</div>
+                              </div>
+                            </div>
+                            <div
+                              id="Discount-feedback"
+                              class="invalid-feedback"
+                            ></div>
+                            <!----><!----><!---->
+                          </div>
+                        </fieldset></span
+                      >
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                      <span
+                        ><fieldset class="form-group" id="__BVID__115">
+                          <legend
+                            tabindex="-1"
+                            class="bv-no-focus-ring col-form-label pt-0"
+                            id="__BVID__115__BV_label_"
+                          >
+                            Shipping
+                          </legend>
+                          <div>
+                            <div role="group" class="input-group">
+                              <!----><input
+                                type="text"
+                                class="form-control"
+                                aria-describedby="Shipping-feedback"
+                                label="Shipping"
+                                id="__BVID__116"
+                              />
+                              <div class="input-group-append">
+                                <div class="input-group-text">$</div>
+                              </div>
+                            </div>
+                            <div
+                              id="Shipping-feedback"
+                              class="invalid-feedback"
+                            ></div>
+                            <!----><!----><!---->
+                          </div>
+                        </fieldset></span
+                      >
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <button
+                        type="button"
+                        class="btn btn-danger ripple btn-rounded btn-block mt-1"
+                      >
+                        <i class="i-Power-2"></i>
+                        Reset
+                      </button>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <button
+                        type="submit"
+                        class="
+                          btn btn-primary
+                          ripple
+                          mt-1
+                          btn-rounded btn-block
+                        "
+                      >
+                        <i class="i-Checkout"></i>
+                        Pay Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form></span
+          >
+          <span><!----></span
+          ><!----><!---->
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="card list-grid">
+          <!----><!---->
+          <div class="card-body">
+            <!----><!---->
+            <div class="row">
+              <div class="col-md-6">
+                <button
+                (click)="sidenav.toggle()"
+                  class="btn btn-outline-info mt-1 btn-block collapsed"
+                  aria-expanded="false"
+                  aria-controls="sidebar-category"
+                  style="overflow-anchor: none"
+                >
+                  <i class="i-Two-Windows"></i>
+                  List of Category
+                </button>
+              </div>
+              <div class="col-md-6">
+                <button
+                (click)="sidenav.toggle()"
+                  class="btn btn-outline-info mt-1 btn-block collapsed"
+                  aria-expanded="false"
+                  aria-controls="sidebar-brand"
+                  style="overflow-anchor: none"
+                >
+                  <i class="i-Library"></i>
+                  Brand List
+                </button>
+              </div>
+              <div class="mt-2 mb-2 col-md-12">
+                <div>
+                  <div
+                    data-position="below"
+                    class="autocomplete"
+                    style="position: relative"
+                  >
+                    <input
+                      style="
+                        border: 1px solid #eee;
+                        border-radius: 8px;
+                        width: 100%;
+                        padding: 12px 12px 12px 48px;
+                        box-sizing: border-box;
+                        position: relative;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        flex: 1;
+                        background-color: #eee;
+                        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PGNpcmNsZSBjeD0iMTEiIGN5PSIxMSIgcj0iOCIvPjxwYXRoIGQ9Ik0yMSAyMWwtNC00Ii8+PC9zdmc+);
+                        background-repeat: no-repeat;
+                        background-position: 12px;
+                      "
+                      role="combobox"
+                      autocomplete="off"
+                      autocapitalize="off"
+                      autocorrect="off"
+                      spellcheck="false"
+                      aria-autocomplete="list"
+                      aria-haspopup="listbox"
+                      aria-owns="autocomplete-result-list-1"
+                      aria-expanded="false"
+                      aria-activedescendant=""
+                      placeholder="Scan/Search Product by Code Name"
+                      aria-label="Search for a Product"
+                      class="autocomplete-input"
+                    />
+                    <ul
+                      id="autocomplete-result-list-1"
+                      role="listbox"
+                      class="autocomplete-result-list"
+                      style="
+                        position: absolute;
+                        z-index: 1;
+                        width: 100%;
+                        visibility: hidden;
+                        pointer-events: none;
+                        top: 100%;
+                      "
+                    ></ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+                  col-md-12
+                  d-flex
+                  flex-row flex-wrap
+                  bd-highlight
+                  list-item
+                  mt-2
+                "
+              >
+                <div
+                  class="card o-hidden bd-highlight m-1"
+                  style="width: 19%; max-width: 19%; min-width: 130px"
+                >
+                  <div class="list-thumb d-flex">
+                    <img
+                      alt=""
+                      src="../../../../assets/images/products/headphone-4.jpg"
+                    />
+                  </div>
+                  <div class="flex-grow-1 d-bock">
+                    <div
+                      class="
+                        card-body
+                        align-self-center
+                        d-flex
+                        flex-column
+                        justify-content-between
+                        align-items-lg-center
+                      "
+                    >
+                      <div class="w-40 w-sm-100 item-title">Avocat</div>
+                      <p class="text-muted text-small w-15 w-sm-100 mb-2">
+                        71087180
+                      </p>
+                      <span class="badge badge-primary w-15 w-sm-100 mb-2"
+                        >$ 15.00</span
+                      >
+                      <p
+                        class="
+                          m-0
+                          text-muted text-small
+                          w-15 w-sm-100
+                          d-none d-lg-block
+                          item-badges
+                        "
+                      >
+                        <span class="badge badge-info">50.00 kg</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card o-hidden bd-highlight m-1"
+                  style="width: 19%; max-width: 19%; min-width: 130px"
+                >
+                  <div class="list-thumb d-flex">
+                    <img
+                      alt=""
+                      src="../../../../assets/images/products/headphone-4.jpg"
+                    />
+                  </div>
+                  <div class="flex-grow-1 d-bock">
+                    <div
+                      class="
+                        card-body
+                        align-self-center
+                        d-flex
+                        flex-column
+                        justify-content-between
+                        align-items-lg-center
+                      "
+                    >
+                      <div class="w-40 w-sm-100 item-title">Limon</div>
+                      <p class="text-muted text-small w-15 w-sm-100 mb-2">
+                        82747852
+                      </p>
+                      <span class="badge badge-primary w-15 w-sm-100 mb-2"
+                        >$ 20.00</span
+                      >
+                      <p
+                        class="
+                          m-0
+                          text-muted text-small
+                          w-15 w-sm-100
+                          d-none d-lg-block
+                          item-badges
+                        "
+                      >
+                        <span class="badge badge-info">34.00 kg</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card o-hidden bd-highlight m-1"
+                  style="width: 19%; max-width: 19%; min-width: 130px"
+                >
+                  <div class="list-thumb d-flex">
+                    <img
+                      alt=""
+                      src="../../../../assets/images/products/headphone-4.jpg"
+                    />
+                  </div>
+                  <div class="flex-grow-1 d-bock">
+                    <div
+                      class="
+                        card-body
+                        align-self-center
+                        d-flex
+                        flex-column
+                        justify-content-between
+                        align-items-lg-center
+                      "
+                    >
+                      <div class="w-40 w-sm-100 item-title">earphones</div>
+                      <p class="text-muted text-small w-15 w-sm-100 mb-2">
+                        63417341
+                      </p>
+                      <span class="badge badge-primary w-15 w-sm-100 mb-2"
+                        >$ 34.00</span
+                      >
+                      <p
+                        class="
+                          m-0
+                          text-muted text-small
+                          w-15 w-sm-100
+                          d-none d-lg-block
+                          item-badges
+                        "
+                      >
+                        <span class="badge badge-info">51.00 pc</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card o-hidden bd-highlight m-1"
+                  style="width: 19%; max-width: 19%; min-width: 130px"
+                >
+                  <div class="list-thumb d-flex">
+                    <img
+                      alt=""
+                      src="../../../../assets/images/products/headphone-4.jpg"
+                    />
+                  </div>
+                  <div class="flex-grow-1 d-bock">
+                    <div
+                      class="
+                        card-body
+                        align-self-center
+                        d-flex
+                        flex-column
+                        justify-content-between
+                        align-items-lg-center
+                      "
+                    >
+                      <div class="w-40 w-sm-100 item-title">Macbook pro</div>
+                      <p class="text-muted text-small w-15 w-sm-100 mb-2">
+                        86102192
+                      </p>
+                      <span class="badge badge-primary w-15 w-sm-100 mb-2"
+                        >$ 1500.00</span
+                      >
+                      <p
+                        class="
+                          m-0
+                          text-muted text-small
+                          w-15 w-sm-100
+                          d-none d-lg-block
+                          item-badges
+                        "
+                      >
+                        <span class="badge badge-info">21.00 pc</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card o-hidden bd-highlight m-1"
+                  style="width: 19%; max-width: 19%; min-width: 130px"
+                >
+                  <div class="list-thumb d-flex">
+                    <img
+                      alt=""
+                      src="../../../../assets/images/products/headphone-4.jpg"
+                    />
+                  </div>
+                  <div class="flex-grow-1 d-bock">
+                    <div
+                      class="
+                        card-body
+                        align-self-center
+                        d-flex
+                        flex-column
+                        justify-content-between
+                        align-items-lg-center
+                      "
+                    >
+                      <div class="w-40 w-sm-100 item-title">Banana</div>
+                      <p class="text-muted text-small w-15 w-sm-100 mb-2">
+                        70171027
+                      </p>
+                      <span class="badge badge-primary w-15 w-sm-100 mb-2"
+                        >$ 7.00</span
+                      >
+                      <p
+                        class="
+                          m-0
+                          text-muted text-small
+                          w-15 w-sm-100
+                          d-none d-lg-block
+                          item-badges
+                        "
+                      >
+                        <span class="badge badge-info">50.00 kg</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card o-hidden bd-highlight m-1"
+                  style="width: 19%; max-width: 19%; min-width: 130px"
+                >
+                  <div class="list-thumb d-flex">
+                    <img
+                      alt=""
+                      src="../../../../assets/images/products/headphone-4.jpg"
+                    />
+                  </div>
+                  <div class="flex-grow-1 d-bock">
+                    <div
+                      class="
+                        card-body
+                        align-self-center
+                        d-flex
+                        flex-column
+                        justify-content-between
+                        align-items-lg-center
+                      "
+                    >
+                      <div class="w-40 w-sm-100 item-title">sunglasses</div>
+                      <p class="text-muted text-small w-15 w-sm-100 mb-2">
+                        87716743
+                      </p>
+                      <span class="badge badge-primary w-15 w-sm-100 mb-2"
+                        >$ 34.00</span
+                      >
+                      <p
+                        class="
+                          m-0
+                          text-muted text-small
+                          w-15 w-sm-100
+                          d-none d-lg-block
+                          item-badges
+                        "
+                      >
+                        <span class="badge badge-info">45.00 pc</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card o-hidden bd-highlight m-1"
+                  style="width: 19%; max-width: 19%; min-width: 130px"
+                >
+                  <div class="list-thumb d-flex">
+                    <img
+                      alt=""
+                      src="../../../../assets/images/products/headphone-4.jpg"
+                    />
+                  </div>
+                  <div class="flex-grow-1 d-bock">
+                    <div
+                      class="
+                        card-body
+                        align-self-center
+                        d-flex
+                        flex-column
+                        justify-content-between
+                        align-items-lg-center
+                      "
+                    >
+                      <div class="w-40 w-sm-100 item-title">unpaired gray</div>
+                      <p class="text-muted text-small w-15 w-sm-100 mb-2">
+                        69311349
+                      </p>
+                      <span class="badge badge-primary w-15 w-sm-100 mb-2"
+                        >$ 25.00</span
+                      >
+                      <p
+                        class="
+                          m-0
+                          text-muted text-small
+                          w-15 w-sm-100
+                          d-none d-lg-block
+                          item-badges
+                        "
+                      >
+                        <span class="badge badge-info">51.00 pc</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card o-hidden bd-highlight m-1"
+                  style="width: 19%; max-width: 19%; min-width: 130px"
+                >
+                  <div class="list-thumb d-flex">
+                    <img
+                      alt=""
+                      src="../../../../assets/images/products/headphone-4.jpg"
+                    />
+                  </div>
+                  <div class="flex-grow-1 d-bock">
+                    <div
+                      class="
+                        card-body
+                        align-self-center
+                        d-flex
+                        flex-column
+                        justify-content-between
+                        align-items-lg-center
+                      "
+                    >
+                      <div class="w-40 w-sm-100 item-title">Strawberry</div>
+                      <p class="text-muted text-small w-15 w-sm-100 mb-2">
+                        53755440
+                      </p>
+                      <span class="badge badge-primary w-15 w-sm-100 mb-2"
+                        >$ 10.00</span
+                      >
+                      <p
+                        class="
+                          m-0
+                          text-muted text-small
+                          w-15 w-sm-100
+                          d-none d-lg-block
+                          item-badges
+                        "
+                      >
+                        <span class="badge badge-info">51.00 kg</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="mt-4 col-md-12">
+                <ul
+                  role="menubar"
+                  aria-disabled="false"
+                  aria-label="Pagination"
+                  class="
+                    pagination
+                    my-0
+                    gull-pagination
+                    align-items-center
+                    b-pagination
+                    justify-content-center
+                  "
+                >
+                  <li
+                    role="presentation"
+                    style="margin: 0 12px"
+                    aria-hidden="true"
+                    class="page-item disabled"
+                  >
+                    <span
+                      role="menuitem"
+                      style="border: none; border-radius: 50%"
+                      aria-label="Go to previous page"
+                      aria-disabled="true"
+                      class="page-link"
+                      ><p class="list-arrow m-0">
+                        <i class="i-Arrow-Left text-40"></i></p
+                    ></span>
+                  </li>
+                  <!----><!---->
+                  <li
+                    role="presentation"
+                    class="page-item active"
+                    style="border-radius: 50%; margin: 0 12px"
+                  >
+                    <button
+                      style="border: none; border-radius: 50%"
+                      role="menuitemradio"
+                      type="button"
+                      aria-label="Go to page 1"
+                      aria-checked="true"
+                      aria-posinset="1"
+                      aria-setsize="2"
+                      tabindex="0"
+                      class="page-link"
+                    >
+                      1
+                    </button>
+                  </li>
+                  <li
+                    role="presentation"
+                    class="page-item"
+                    style="margin: 0 12px"
+                  >
+                    <button
+                      style="border: none; border-radius: 50%"
+                      role="menuitemradio"
+                      type="button"
+                      aria-label="Go to page 2"
+                      aria-checked="false"
+                      aria-posinset="2"
+                      aria-setsize="2"
+                      tabindex="-1"
+                      class="page-link"
+                    >
+                      2
+                    </button>
+                  </li>
+                  <!----><!---->
+                  <li
+                    role="presentation"
+                    class="page-item"
+                    style="margin: 0 12px"
+                  >
+                    <button
+                      role="menuitem"
+                      style="border: none; border-radius: 50%"
+                      type="button"
+                      tabindex="-1"
+                      aria-label="Go to next page"
+                      class="page-link"
+                    >
+                      <p class="list-arrow m-0">
+                        <i class="i-Arrow-Right text-40"></i>
+                      </p>
+                    </button>
+                  </li>
+                  <li role="presentation" class="page-item">
+                    <button
+                      style="border: none; border-radius: 50%"
+                      role="menuitem"
+                      type="button"
+                      tabindex="-1"
+                      aria-label="Go to last page"
+                      class="page-link"
+                    >
+                      <!---->
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!----><!---->
+        </div>
+      </div>
+      <div tabindex="-1" class="b-sidebar-outer">
+        <!---->
+        <div
+          id="sidebar-brand"
+          tabindex="-1"
+          role="dialog"
+          aria-modal="false"
+          aria-hidden="true"
+          aria-labelledby="sidebar-brand___title__"
+          class="b-sidebar shadow b-sidebar-right bg-white text-dark"
+          style="display: none"
+        >
+          <header class="b-sidebar-header">
+            <button type="button" aria-label="Close" class="close text-dark">
+              <svg
+                viewBox="0 0 16 16"
+                width="1em"
+                height="1em"
+                focusable="false"
+                role="img"
+                aria-label="x"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi-x b-icon bi"
+              >
+                <g>
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                  ></path>
+                </g>
+              </svg></button
+            ><strong id="sidebar-brand___title__">Brand List</strong>
+          </header>
+          <div class="b-sidebar-body">
+            <div class="px-3 py-2">
+              <div class="row">
+                <div
+                  class="
+                    col-md-12
+                    d-flex
+                    flex-row flex-wrap
+                    bd-highlight
+                    list-item
+                    mt-2
+                  "
+                >
+                  <div
+                    class="card o-hidden bd-highlight m-1 brand-Active"
+                    style="width: 19%; max-width: 19%; min-width: 130px"
+                  >
+                    <div class="list-thumb d-flex">
+                      <img alt="" src="/images/no-image.png" />
+                    </div>
+                    <div class="flex-grow-1 d-bock">
+                      <div
+                        class="
+                          card-body
+                          align-self-center
+                          d-flex
+                          flex-column
+                          justify-content-between
+                          align-items-lg-center
+                        "
+                      >
+                        <div class="item-title">All Brand</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card o-hidden bd-highlight m-1"
+                    style="width: 19%; max-width: 19%; min-width: 130px"
+                  >
+                    <img alt="" src="/images/brands/adidas.jpg" />
+                    <div class="flex-grow-1 d-bock">
+                      <div
+                        class="
+                          card-body
+                          align-self-center
+                          d-flex
+                          flex-column
+                          justify-content-between
+                          align-items-lg-center
+                        "
+                      >
+                        <div class="item-title">Adidas</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card o-hidden bd-highlight m-1"
+                    style="width: 19%; max-width: 19%; min-width: 130px"
+                  >
+                    <img alt="" src="/images/brands/Colgate.png" />
+                    <div class="flex-grow-1 d-bock">
+                      <div
+                        class="
+                          card-body
+                          align-self-center
+                          d-flex
+                          flex-column
+                          justify-content-between
+                          align-items-lg-center
+                        "
+                      >
+                        <div class="item-title">Colgate</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card o-hidden bd-highlight m-1"
+                    style="width: 19%; max-width: 19%; min-width: 130px"
+                  >
+                    <img alt="" src="/images/brands/samsung.png" />
+                    <div class="flex-grow-1 d-bock">
+                      <div
+                        class="
+                          card-body
+                          align-self-center
+                          d-flex
+                          flex-column
+                          justify-content-between
+                          align-items-lg-center
+                        "
+                      >
+                        <div class="item-title">samsung</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="mt-4 col-md-12">
+                  <ul
+                    role="menubar"
+                    aria-disabled="false"
+                    aria-label="Pagination"
+                    class="
+                      pagination
+                      my-0
+                      gull-pagination
+                      align-items-center
+                      b-pagination
+                      justify-content-center
+                    "
+                  >
+                    <li
+                      role="presentation"
+                      aria-hidden="true"
+                      class="page-item disabled"
+                    >
+                      <span
+                        role="menuitem"
+                        aria-label="Go to first page"
+                        aria-disabled="true"
+                        class="page-link"
+                        ><!----></span
+                      >
+                    </li>
+                    <li
+                      role="presentation"
+                      aria-hidden="true"
+                      class="page-item disabled"
+                    >
+                      <span
+                        role="menuitem"
+                        aria-label="Go to previous page"
+                        aria-disabled="true"
+                        class="page-link"
+                        ><p class="list-arrow m-0">
+                          <i class="i-Arrow-Left text-40"></i></p
+                      ></span>
+                    </li>
+                    <!----><!---->
+                    <li
+                      role="presentation"
+                      class="page-item active"
+                      style="border-radius: 50%"
+                    >
+                      <button
+                        role="menuitemradio"
+                        type="button"
+                        aria-label="Go to page 1"
+                        aria-checked="true"
+                        aria-posinset="1"
+                        aria-setsize="2"
+                        tabindex="0"
+                        class="page-link"
+                      >
+                        1
+                      </button>
+                    </li>
+                    <li role="presentation" class="page-item">
+                      <button
+                        role="menuitemradio"
+                        type="button"
+                        aria-label="Go to page 2"
+                        aria-checked="false"
+                        aria-posinset="2"
+                        aria-setsize="2"
+                        tabindex="-1"
+                        class="page-link"
+                      >
+                        2
+                      </button>
+                    </li>
+                    <!----><!---->
+                    <li role="presentation" class="page-item">
+                      <button
+                        role="menuitem"
+                        type="button"
+                        tabindex="-1"
+                        aria-label="Go to next page"
+                        class="page-link"
+                      >
+                        <p class="list-arrow m-0">
+                          <i class="i-Arrow-Right text-40"></i>
+                        </p>
+                      </button>
+                    </li>
+                    <li role="presentation" class="page-item">
+                      <button
+                        role="menuitem"
+                        type="button"
+                        tabindex="-1"
+                        aria-label="Go to last page"
+                        class="page-link"
+                      >
+                        <!---->
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---->
+        </div>
+        <!----><!---->
+      </div>
+      <div tabindex="-1" class="b-sidebar-outer">
+        <!---->
+        <div
+          id="sidebar-category"
+          tabindex="-1"
+          role="dialog"
+          aria-modal="false"
+          aria-hidden="true"
+          aria-labelledby="sidebar-category___title__"
+          class="b-sidebar shadow b-sidebar-right bg-white text-dark"
+          style="display: none"
+        >
+          <header class="b-sidebar-header">
+            <button type="button" aria-label="Close" class="close text-dark">
+              <svg
+                viewBox="0 0 16 16"
+                width="1em"
+                height="1em"
+                focusable="false"
+                role="img"
+                aria-label="x"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi-x b-icon bi"
+              >
+                <g>
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                  ></path>
+                </g>
+              </svg></button
+            ><strong id="sidebar-category___title__" style="font-size:21px;">List of Category</strong>
+          </header>
+          <div class="b-sidebar-body">
+            <div class="px-3 py-2">
+              <div class="row">
+                <div
+                  class="
+                    col-md-12
+                    d-flex
+                    flex-row flex-wrap
+                    bd-highlight
+                    list-item
+                    mt-2
+                  "
+                >
+                  <div
+                    class="card o-hidden bd-highlight m-1 brand-Active"
+                    style="width: 19%; max-width: 19%; min-width: 130px"
+                  >
+                    <div class="list-thumb d-flex">
+                      <img alt="" src="/images/no-image.png" />
+                    </div>
+                    <div class="flex-grow-1 d-bock">
+                      <div
+                        class="
+                          card-body
+                          align-self-center
+                          d-flex
+                          flex-column
+                          justify-content-between
+                          align-items-lg-center
+                        "
+                      >
+                        <div class="item-title">All Category</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card o-hidden bd-highlight m-1"
+                    style="width: 19%; max-width: 19%; min-width: 130px"
+                  >
+                    <img alt="" src="/images/no-image.png" />
+                    <div class="flex-grow-1 d-bock">
+                      <div
+                        class="
+                          card-body
+                          align-self-center
+                          d-flex
+                          flex-column
+                          justify-content-between
+                          align-items-lg-center
+                        "
+                      >
+                        <div class="item-title">Accessories</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card o-hidden bd-highlight m-1"
+                    style="width: 19%; max-width: 19%; min-width: 130px"
+                  >
+                    <img alt="" src="/images/no-image.png" />
+                    <div class="flex-grow-1 d-bock">
+                      <div
+                        class="
+                          card-body
+                          align-self-center
+                          d-flex
+                          flex-column
+                          justify-content-between
+                          align-items-lg-center
+                        "
+                      >
+                        <div class="item-title">Computers</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card o-hidden bd-highlight m-1"
+                    style="width: 19%; max-width: 19%; min-width: 130px"
+                  >
+                    <img alt="" src="/images/no-image.png" />
+                    <div class="flex-grow-1 d-bock">
+                      <div
+                        class="
+                          card-body
+                          align-self-center
+                          d-flex
+                          flex-column
+                          justify-content-between
+                          align-items-lg-center
+                        "
+                      >
+                        <div class="item-title">Jackets</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="mt-4 col-md-12">
+                  <ul
+                    role="menubar"
+                    aria-disabled="false"
+                    aria-label="Pagination"
+                    class="
+                      pagination
+                      my-0
+                      gull-pagination
+                      align-items-center
+                      b-pagination
+                      justify-content-center
+                    "
+                  >
+                    <li
+                      role="presentation"
+                      aria-hidden="true"
+                      class="page-item disabled"
+                    >
+                      <span
+                        role="menuitem"
+                        aria-label="Go to first page"
+                        aria-disabled="true"
+                        class="page-link"
+                        ><!----></span
+                      >
+                    </li>
+                    <li
+                      role="presentation"
+                      aria-hidden="true"
+                      class="page-item disabled"
+                    >
+                      <span
+                        role="menuitem"
+                        aria-label="Go to previous page"
+                        aria-disabled="true"
+                        class="page-link"
+                        ><p class="list-arrow m-0">
+                          <i class="i-Arrow-Left text-40"></i></p
+                      ></span>
+                    </li>
+                    <!----><!---->
+                    <li
+                      role="presentation"
+                      class="page-item active"
+                      style="border-radius: 50%"
+                    >
+                      <button
+                        role="menuitemradio"
+                        type="button"
+                        style="border-radius: 50%"
+                        aria-label="Go to page 1"
+                        aria-checked="true"
+                        aria-posinset="1"
+                        aria-setsize="2"
+                        tabindex="0"
+                        class="page-link"
+                      >
+                        1
+                      </button>
+                    </li>
+                    <li role="presentation" class="page-item">
+                      <button
+                        role="menuitemradio"
+                        type="button"
+                        aria-label="Go to page 2"
+                        aria-checked="false"
+                        aria-posinset="2"
+                        aria-setsize="2"
+                        tabindex="-1"
+                        class="page-link"
+                      >
+                        2
+                      </button>
+                    </li>
+                    <!----><!---->
+                    <li role="presentation" class="page-item">
+                      <button
+                        role="menuitem"
+                        type="button"
+                        tabindex="-1"
+                        aria-label="Go to next page"
+                        class="page-link"
+                      >
+                        <p class="list-arrow m-0">
+                          <i class="i-Arrow-Right text-40"></i>
+                        </p>
+                      </button>
+                    </li>
+                    <li role="presentation" class="page-item">
+                      <button
+                        role="menuitem"
+                        type="button"
+                        tabindex="-1"
+                        aria-label="Go to last page"
+                        class="page-link"
+                      >
+                        <!---->
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---->
+        </div>
+        <!----><!---->
+      </div>
+      <!---->
+      <span><!----></span> <span><!----></span>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

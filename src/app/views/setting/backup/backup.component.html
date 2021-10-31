@@ -1,0 +1,135 @@
+<div class="breadcrumb">
+    <h1>Backup Database
+</h1>
+    <ul>
+      <li>
+        <a routerLink="/adjustment" routerLinkActive="router-link-active"
+          >Settings</a
+        >
+      </li>
+      <li>Backup Database
+</li>
+    </ul>
+  </div>
+  
+  <div class="separator-breadcrumb border-top"></div>
+  <div class="card">
+  <div class="div" style="margin:25px">
+    <div style="display: flex; justify-content: space-between; width: 100%">
+      <div class="left" style="display: flex">
+        <div class="magnifying-glass"></div>
+        <div class="form-group">
+          <input
+            id="email"
+            placeholder="Search this table"
+            class="form-control"
+            style="background: #fff"
+            type="email"
+          />
+        </div>
+      </div>
+      <div>
+        <button type="button" class="btn btn-primary btn-rounded m-1">
+          <i class="i-Add"
+            ><span style="position: relative; bottom: 1px; margin-left: 3px"
+              >Create</span
+            ></i
+          >
+        </button>
+      </div>
+    </div>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+          <th><input  scope="col" type="checkbox"></th>
+        <th scope="col" class="btn1" style="position: relative">Date</th>
+        <th scope="col" class="btn1" style="position: relative">File Size</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+   
+    </tbody>
+  </table>
+  <div class="lower" style="display: flex; justify-content: space-between;margin:25px;">
+    <div class="left">
+      <label
+        for="vgt-select-rpp-505333257072"
+        style="font-size: 14px; color: #909399"
+        class="footer__row-count__label"
+        >Rows per page:</label
+      >
+      <select
+        id="vgt-select-rpp-505333257072"
+        autocomplete="off"
+        name="perPageSelect"
+        aria-controls="vgt-table"
+        style="
+          background-color: transparent;
+          width: auto;
+          padding: 0;
+          border: 0;
+          border-radius: 0;
+          height: auto;
+          font-size: 14px;
+          margin-left: 8px;
+          color: #606266;
+          font-weight: 700;
+          -webkit-appearance: auto !important;
+          -moz-appearance: auto !important;
+          appearance: auto !important;
+        "
+        class="footer__row-count__select"
+      >
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="40">40</option>
+        <option value="50">50</option>
+        <option value="4">All</option>
+      </select>
+    </div>
+    <div class="right">
+      <div class="footer__navigation">
+        <div class="footer__navigation__page-info">
+          <div>1 - 4 of 4</div>
+        </div>
+        <button
+          type="button"
+          aria-controls="vgt-table"
+          class="footer__navigation__page-btn disabled"
+          style="
+            background: 0 0;
+            border: none;
+            text-decoration: none;
+            color: #606266;
+            font-weight: 700;
+            white-space: nowrap;
+            vertical-align: middle;
+          "
+        >
+          <span aria-hidden="true" class="chevron left"></span> <span>prev</span>
+        </button>
+        <button
+          type="button"
+          style="
+            background: 0 0;
+            border: none;
+            text-decoration: none;
+            color: #606266;
+            font-weight: 700;
+            white-space: nowrap;
+            vertical-align: middle;
+          "
+          aria-controls="vgt-table"
+          class="footer__navigation__page-btn disabled"
+        >
+          <span>next</span> <span aria-hidden="true" class="chevron right"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+  

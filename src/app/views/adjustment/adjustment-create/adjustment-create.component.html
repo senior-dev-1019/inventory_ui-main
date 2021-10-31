@@ -1,0 +1,87 @@
+<div class="breadcrumb">
+  <h1>{{ "ADJUSTMENT.CREATE" | translate }}</h1>
+  <ul>
+    <li>
+      <a routerLink="/adjustment" routerLinkActive="router-link-active"
+        >{{ "ADJUSTMENT.NAME" | translate }}</a
+      >
+    </li>
+    <li>{{ "ADJUSTMENT.CREATE" | translate }}</li>
+  </ul>
+</div>
+
+<div class="separator-breadcrumb border-top"></div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="card mb-4" style="display: flex">
+      <div style="display: flex; flex-direction: row">
+        <div class="col-md-6 form-group mb-3">
+          <label for="picker1">{{ "COMMON.CHOOSE" | translate }}</label>
+          <select class="form-control">
+            <option>Warehouse1</option>
+            <option>Warehouse 2</option>
+          </select>
+        </div>
+
+        <div class="col-md-6 form-group mb-3">
+          <label for="picker1">{{ "COMMON.DATE" | translate }}</label>
+          <div class="input-group">
+            <input
+              id="picker1"
+              class="form-control "
+              value="2016-06-06"
+              placeholder="yyyy-mm-dd"
+              name="dp"
+              ngbDatepicker
+              #dp="ngbDatepicker"
+            />
+            <div class="input-group-append">
+              <button
+                class="btn btn-secondary"
+                (click)="dp.toggle()"
+                type="button"
+              >
+                <i class="icon-regular i-Calendar-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="margin:10px">
+        <input
+          type="text"
+          placeholder="Search by Product code or name"
+          class="form-control mb-2 ml-1 mr-1"
+        />
+      </div>
+      <div class="inner">
+        <table class="table">
+          <thead class="bg-gray-300">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Code Product</th>
+              <th scope="col">{{ "PRODUCT.PRODUCT" | translate }}</th>
+              <th scope="col">{{ "COMMON.STOCK" | translate }}</th>
+              <th scope="col">Qty</th>
+              <th scope="col">{{ "COMMON.TYPE" | translate }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>No Data Avaialable</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="area" >
+        <div class="form-group" style="margin:10px">
+            <label for="comment">Note:</label>
+            <textarea class="form-control" placeholder="A Few Word" rows="5" id="comment"></textarea>
+          </div>
+      </div>
+      <div class="submit" style="margin:10px">
+        <button type="button" class="btn btn-primary">{{ "PRODUCT.SUBMIT" | translate }}</button>
+      </div>
+    </div>
+  </div>
+</div>

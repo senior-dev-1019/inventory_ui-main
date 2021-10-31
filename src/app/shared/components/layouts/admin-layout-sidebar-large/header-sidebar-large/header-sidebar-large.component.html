@@ -1,0 +1,122 @@
+<div class="main-header">
+  <div class="logo">
+    <img src="./assets/images/logo.png" alt="" />
+  </div>
+
+  <div class="menu-toggle" (click)="toggelSidebar()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="d-flex align-items-center">
+    <!-- Mega menu -->
+    <!-- Search bar -->
+  </div>
+
+  <div style="margin: auto"></div>
+
+  <div class="header-part-right">
+    <a routerLink="/app/pos" class="btn btn-outline-primary tn-sm btn-rounded"
+      ><span class="ul-btn__text ml-1">{{ "HEADER.POS" | translate }}</span></a
+    >
+    <i
+      fullScreenWindow
+      class="i-Full-Screen header-icon d-none d-sm-inline-block"
+      role="button"
+    ></i>
+    <div
+      ngbDropdown
+      [placement]="'bottom-right'"
+      class="d-none d-sm-inline-block"
+    >
+      <i
+        ngbDropdownToggle
+        class="i-Globe text-muted header-icon"
+        role="button"
+      ></i>
+      <div ngbDropdownMenu class="menu-icon-grid-dropdown">
+        <div class="menu-icon-grid">
+       
+          <a
+            style="cursor: pointer"
+            *ngFor="let lang of language"
+            (click)="change(lang.name)"
+          >
+          <img [src]="lang?.image" style="height: 30px;width: 35px;">  
+          <p class="mt-2">{{ lang.name }}</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div ngbDropdown [placement]="'bottom-right'">
+      <div class="badge-top-container">
+        <span class="badge badge-primary">{{ notifications.length }}</span>
+        <i
+          ngbDropdownToggle
+          class="i-Bell text-muted header-icon"
+          role="button"
+        ></i>
+      </div>
+      <div
+        ngbDropdownMenu
+        class="notification-dropdown rtl-ps-none"
+        perfectScrollbar
+      >
+        <div
+          class="dropdown-item d-flex"
+          *ngFor="let item of notifications"
+          [routerLink]="[item.link]"
+        >
+          <div class="notification-icon">
+            <i class="{{ item.icon }} text-{{ item.status }} mr-1"></i>
+          </div>
+          <div class="notification-details flex-grow-1">
+            <p class="m-0 d-flex align-items-center">
+              <span>{{ item.title }}</span>
+              <span
+                *ngIf="item.badge"
+                class="badge badge-pill badge-{{ item.status }} ml-1 mr-1"
+                >{{ item.badge }}</span
+              >
+              <span class="flex-grow-1"></span>
+              <span class="text-small text-muted ml-auto">{{
+                item.time | relativeTime
+              }}</span>
+            </p>
+            <p class="text-small text-muted m-0">
+              {{ item.text | excerpt: 30 }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      ngbDropdown
+      [placement]="'bottom-right'"
+      class="user col align-self-end"
+    >
+      <img
+        src="./assets/images/faces/1.jpg"
+        id="userDropdown"
+        ngbDropdownToggle
+        alt=""
+      />
+
+      <div
+        ngbDropdownMenu
+        aria-labelledby="userDropdown"
+        class="header-account-dropdown"
+      >
+        <div class="dropdown-header">
+          <i class="i-Lock-User mr-1"></i> Timothy Carlson
+        </div>
+        <button class="dropdown-item">Account settings</button>
+        <button class="dropdown-item">Billing history</button>
+        <button class="dropdown-item" (click)="signout()">Sign out</button>
+      </div>
+    </div>
+  </div>
+</div>

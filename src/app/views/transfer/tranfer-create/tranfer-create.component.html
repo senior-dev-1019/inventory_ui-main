@@ -1,0 +1,233 @@
+<div class="breadcrumb">
+  <h1>{{ "TRANSFER.CREATE" | translate }}</h1>
+  <ul>
+    <li>
+      <a routerLink="/adjustment" routerLinkActive="router-link-active"
+        >{{ "TRANSFER.NAME" | translate }}</a
+      >
+    </li>
+    <li>{{ "TRANSFER.CREATE" | translate }}</li>
+  </ul>
+</div>
+
+<div class="separator-breadcrumb border-top"></div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="card mb-4" style="display: flex">
+      <div style="display: flex; flex-direction: row" class="mt-2">
+        <div class="col-md-4 form-group mb-3">
+          <label for="picker1">{{ "COMMON.DATE" | translate }}</label>
+          <div class="input-group">
+            <input
+              id="picker1"
+              class="form-control"
+              value="2016-06-06"
+              placeholder="yyyy-mm-dd"
+              name="dp"
+              ngbDatepicker
+              #dp="ngbDatepicker"
+            />
+            <div class="input-group-append">
+              <button
+                class="btn btn-secondary"
+                (click)="dp.toggle()"
+                type="button"
+              >
+                <i class="icon-regular i-Calendar-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 form-group mb-3">
+          <label for="picker1">{{ "COMMON.FROM" | translate }}</label>
+          <select class="form-control">
+            <option>Warehouse1</option>
+            <option>Warehouse 2</option>
+          </select>
+        </div>
+
+        <div class="col-md-4 form-group mb-3">
+          <label for="picker1">{{ "COMMON.TO" | translate }}</label>
+          <select class="form-control">
+            <option>Warehouse1</option>
+            <option>Warehouse 2</option>
+          </select>
+        </div>
+      </div>
+      <div style="margin: 10px">
+        <input
+          type="text"
+          placeholder="Search by Product code or name"
+          class="form-control mb-2 ml-1 mr-1"
+        />
+      </div>
+      <div class="inner">
+        <table class="table">
+          <thead class="bg-gray-300">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">{{ "PRODUCT.PRODUCT" | translate }}</th>
+              <th scope="col">{{ "COMMON.NET_COST" | translate }}</th>
+              <th scope="col">{{ "COMMON.STOCK" | translate }}</th>
+              <th scope="col">{{ "COMMON.QTY" | translate }}</th>
+              <th scope="col">{{ "COMMON.DISCOUNT" | translate }}</th>
+              <th scope="col">{{ "COMMON.TAX" | translate }}</th>
+              <th scope="col">{{ "COMMON.SUBTOTAL" | translate }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>No Data Avaialable</th>
+            </tr>
+          </tbody>
+        </table>
+        <div style="display: flex; justify-content: flex-end" class="mr-3">
+          <table class="table table-striped table-sm" style="width: 30%">
+            <tbody>
+              <tr>
+                <td class="bold">Order Tax</td>
+                <td><span>$ 0.00 (0.00 %)</span></td>
+              </tr>
+              <tr>
+                <td class="bold">Discount</td>
+                <td>$ 0.00</td>
+              </tr>
+              <tr>
+                <td class="bold">Shipping</td>
+                <td>$ 0.00</td>
+              </tr>
+              <tr>
+                <td><span class="font-weight-bold">Grand Total</span></td>
+                <td><span class="font-weight-bold">$ 0.00</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="middle" style="display: flex; justify-content: flex-end">
+        <div class="mb-3 col-sm-12 col-md-4 col-lg-4">
+          <span
+            ><fieldset class="form-group" id="__BVID__146">
+              <legend
+                tabindex="-1"
+                class="bv-no-focus-ring col-form-label pt-0"
+                id="__BVID__146__BV_label_"
+              >
+                Order Tax
+              </legend>
+              <div>
+                <div role="group" class="input-group">
+                  <!----><input
+                    type="text"
+                    class="form-control"
+                    aria-describedby="OrderTax-feedback"
+                    label="Order Tax"
+                    id="__BVID__147"
+                  />
+                  <div class="input-group-append">
+                    <div class="input-group-text">%</div>
+                  </div>
+                </div>
+                <div id="OrderTax-feedback" class="invalid-feedback"></div>
+                <!----><!----><!---->
+              </div>
+            </fieldset></span
+          >
+        </div>
+        <div class="mb-3 col-sm-12 col-md-4 col-lg-4">
+          <span
+            ><fieldset class="form-group" id="__BVID__149">
+              <legend
+                tabindex="-1"
+                class="bv-no-focus-ring col-form-label pt-0"
+                id="__BVID__149__BV_label_"
+              >
+                Discount
+              </legend>
+              <div>
+                <div role="group" class="input-group">
+                  <!----><input
+                    type="text"
+                    class="form-control"
+                    aria-describedby="Discount-feedback"
+                    label="Discount"
+                    id="__BVID__150"
+                  />
+                  <div class="input-group-append">
+                    <div class="input-group-text">$</div>
+                  </div>
+                </div>
+                <div id="Discount-feedback" class="invalid-feedback"></div>
+                <!----><!----><!---->
+              </div>
+            </fieldset></span
+          >
+        </div>
+        <div class="mb-3 col-sm-12 col-md-4 col-lg-4">
+          <span
+            ><fieldset class="form-group" id="__BVID__152">
+              <legend
+                tabindex="-1"
+                class="bv-no-focus-ring col-form-label pt-0"
+                id="__BVID__152__BV_label_"
+              >
+                Shipping
+              </legend>
+              <div>
+                <div role="group" class="input-group">
+                  <!----><input
+                    type="text"
+                    class="form-control"
+                    aria-describedby="Shipping-feedback"
+                    label="Shipping"
+                    id="__BVID__153"
+                  />
+                  <div class="input-group-append">
+                    <div class="input-group-text">$</div>
+                  </div>
+                </div>
+                <div id="Shipping-feedback" class="invalid-feedback"></div>
+                <!----><!----><!---->
+              </div>
+            </fieldset></span
+          >
+        </div>
+      </div>
+      <label for="Status" style="margin: 10px; margin-bottom: -7px"
+        >{{ "COMMON.STATUS" | translate }}</label
+      >
+      <mat-form-field
+        appearance="outline"
+        style="width: 31%; margin: 10px; background: #f8f9fa; height: 50px"
+      >
+        <input
+          type="text"
+          aria-label="Number"
+          matInput
+          [matAutocomplete]="auto"
+        />
+        <mat-icon matSuffix>keyboard_arrow_down</mat-icon>
+
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let option of options" [value]="option">
+            {{ option }}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <div class="area">
+        <div class="form-group" style="margin: 10px">
+          <label for="comment">Note:</label>
+          <textarea
+            class="form-control"
+            placeholder="A Few Word"
+            rows="5"
+            id="comment"
+          ></textarea>
+        </div>
+      </div>
+      <div class="submit" style="margin: 10px">
+        <button type="button" class="btn btn-primary">{{ "PRODUCT.SUBMIT" | translate }}</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,756 @@
+<div class="breadcrumb">
+  <h1>Warehouse report</h1>
+  <ul>
+    <li>
+      <a routerLink="/sales-return/view" routerLinkActive="router-link-active"
+        >Settings</a
+      >
+    </li>
+    <li>Warehouse report</li>
+  </ul>
+</div>
+
+<div class="separator-breadcrumb border-top"></div>
+
+<div class="row">
+  <div class="col-sm-12 col-md-6 col-lg-3">
+    <div
+      class="card card-icon-bg card-icon-bg-primary o-hidden mb-30 text-center"
+    >
+      <!----><!---->
+      <div class="card-body">
+        <!----><!----><i class="i-Full-Cart"></i>
+        <div class="content">
+          <p class="text-muted mt-2 mb-0">Sales</p>
+          <p class="text-primary text-24 line-height-1 mb-2">8</p>
+        </div>
+      </div>
+      <!----><!---->
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-6 col-lg-3">
+    <div
+      class="card card-icon-bg card-icon-bg-primary o-hidden mb-30 text-center"
+    >
+      <!----><!---->
+      <div class="card-body">
+        <!----><!----><i class="i-Checkout-Basket"></i>
+        <div class="content" style="flex-direction: column; max-width: 135px">
+          <p class="text-muted mt-2 mb-0">Purchases</p>
+          <p class="text-primary text-24 line-height-1 mb-2">8</p>
+        </div>
+      </div>
+      <!----><!---->
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-6 col-lg-3">
+    <div
+      class="card card-icon-bg card-icon-bg-primary o-hidden mb-30 text-center"
+    >
+      <!----><!---->
+      <div class="card-body">
+        <!----><!----><i class="i-Turn-Left"></i>
+        <div class="content" style="flex-direction: column; max-width: 135px">
+          <p class="text-muted mt-2 mb-0">Purchases Return</p>
+          <p class="text-primary text-24 line-height-1 mb-2">5</p>
+        </div>
+      </div>
+      <!----><!---->
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-6 col-lg-3">
+    <div
+      class="card card-icon-bg card-icon-bg-primary o-hidden mb-30 text-center"
+    >
+      <!----><!---->
+      <div class="card-body">
+        <!----><!----><i class="i-Turn-Right"></i>
+        <div class="content" style="flex-direction: column; max-width: 135px">
+          <p class="text-muted mt-2 mb-0">Sales Return</p>
+          <p class="text-primary text-24 line-height-1 mb-2">5</p>
+        </div>
+      </div>
+      <!----><!---->
+    </div>
+  </div>
+</div>
+<div class="card mt-4">
+  <ul
+    role="tablist"
+    style="border-bottom: 2px solid #8b5cf6"
+    class="nav nav-tabs"
+    id="__BVID__291__BV_tab_controls_"
+  >
+    <!---->
+    <li *ngFor="let item of items" role="presentation" class="nav-item">
+      <a
+        (click)="changeTab(item)"
+        style="cursor: pointer"
+        role="tab"
+        [ngClass]="{ active: item.name == currentName }"
+        aria-selected="true"
+        aria-setsize="5"
+        aria-posinset="1"
+        class="nav-link nav nav-tabs"
+        id="__BVID__292___BV_tab_button__"
+        aria-controls="__BVID__292"
+        >{{ item.name }}</a
+      >
+    </li>
+  </ul>
+  <div>
+    <ng-container
+      *ngTemplateOutlet="
+        currentName === 'Quotation'
+          ? Quotation
+          : currentName === 'Sales'
+          ? Sales
+          : currentName === 'Sales Return'
+          ? SalesReturn
+          : currentName === 'Purchase Return'
+          ? Purchase
+          : PurchaseReturn
+      "
+    >
+    </ng-container>
+
+    <ng-template #Quotation>
+      <div class="left" style="display: flex; margin: 25px">
+        <div class="magnifying-glass"></div>
+        <div class="form-group">
+          <input
+            id="email"
+            placeholder="Search this table"
+            class="form-control"
+            style="background: #fff"
+            type="email"
+          />
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" class="btn1" style="position: relative">
+              Quotation
+            </th>
+            <th scope="col" class="btn1" style="position: relative">Sales</th>
+            <th scope="col" class="btn1" style="position: relative">
+              Sales Return
+            </th>
+            <th scope="col" class="btn1" style="position: relative">
+              Purchase Return
+            </th>
+            <th scope="col" class="btn1" style="position: relative">
+              Expenses
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>2021-10-20</td>
+            <td>Phyliss J. Polite</td>
+            <td>322</td>
+            <td><span class="badge badge-outline-success">Completed</span></td>
+            <td>33</td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        class="lower"
+        style="display: flex; justify-content: space-between; margin: 25px"
+      >
+        <div class="left">
+          <label
+            for="vgt-select-rpp-505333257072"
+            style="font-size: 14px; color: #909399"
+            class="footer__row-count__label"
+            >Rows per page:</label
+          >
+          <select
+            id="vgt-select-rpp-505333257072"
+            autocomplete="off"
+            name="perPageSelect"
+            aria-controls="vgt-table"
+            style="
+              background-color: transparent;
+              width: auto;
+              padding: 0;
+              border: 0;
+              border-radius: 0;
+              height: auto;
+              font-size: 14px;
+              margin-left: 8px;
+              color: #606266;
+              font-weight: 700;
+              -webkit-appearance: auto !important;
+              -moz-appearance: auto !important;
+              appearance: auto !important;
+            "
+            class="footer__row-count__select"
+          >
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+            <option value="4">All</option>
+          </select>
+        </div>
+        <div class="right">
+          <div class="footer__navigation">
+            <div class="footer__navigation__page-info">
+              <div>1 - 4 of 4</div>
+            </div>
+            <button
+              type="button"
+              aria-controls="vgt-table"
+              class="footer__navigation__page-btn disabled"
+              style="
+                background: 0 0;
+                border: none;
+                text-decoration: none;
+                opacity: 0.5;
+                color: #606266;
+                font-weight: 700;
+                white-space: nowrap;
+                vertical-align: middle;
+              "
+            >
+              <span aria-hidden="true" class="chevron left"></span>
+              <span>prev</span>
+            </button>
+            <button
+              type="button"
+              style="
+                background: 0 0;
+                border: none;
+                text-decoration: none;
+                color: #606266;
+                font-weight: 700;
+                opacity: 0.5;
+                white-space: nowrap;
+                vertical-align: middle;
+              "
+              aria-controls="vgt-table"
+              class="footer__navigation__page-btn disabled"
+            >
+              <span>next</span>
+              <span aria-hidden="true" class="chevron right"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template #Sales>
+      <div class="left" style="display: flex; margin: 25px">
+        <div class="magnifying-glass"></div>
+        <div class="form-group">
+          <input
+            id="email"
+            placeholder="Search this table"
+            class="form-control"
+            style="background: #fff"
+            type="email"
+          />
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" class="btn1" style="position: relative">
+              Reference
+            </th>
+            <th scope="col" class="btn1" style="position: relative">
+              Customer
+            </th>
+            <th scope="col" class="btn1" style="position: relative">Status</th>
+            <th scope="col" class="btn1" style="position: relative">
+              Grand Total
+            </th>
+            <th scope="col" class="btn1" style="position: relative">Paid</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>2021-10-20</td>
+            <td>Phyliss J. Polite</td>
+            <td><span class="badge badge-outline-success">Completed</span></td>
+            <td>333</td>
+            <td>30</td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        class="lower"
+        style="display: flex; justify-content: space-between; margin: 25px"
+      >
+        <div class="left">
+          <label
+            for="vgt-select-rpp-505333257072"
+            style="font-size: 14px; color: #909399"
+            class="footer__row-count__label"
+            >Rows per page:</label
+          >
+          <select
+            id="vgt-select-rpp-505333257072"
+            autocomplete="off"
+            name="perPageSelect"
+            aria-controls="vgt-table"
+            style="
+              background-color: transparent;
+              width: auto;
+              padding: 0;
+              border: 0;
+              border-radius: 0;
+              height: auto;
+              font-size: 14px;
+              margin-left: 8px;
+              color: #606266;
+              font-weight: 700;
+              -webkit-appearance: auto !important;
+              -moz-appearance: auto !important;
+              appearance: auto !important;
+            "
+            class="footer__row-count__select"
+          >
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+            <option value="4">All</option>
+          </select>
+        </div>
+        <div class="right">
+          <div class="footer__navigation">
+            <div class="footer__navigation__page-info">
+              <div>1 - 4 of 4</div>
+            </div>
+            <button
+              type="button"
+              aria-controls="vgt-table"
+              class="footer__navigation__page-btn disabled"
+              style="
+                background: 0 0;
+                border: none;
+                text-decoration: none;
+                opacity: 0.5;
+                color: #606266;
+                font-weight: 700;
+                white-space: nowrap;
+                vertical-align: middle;
+              "
+            >
+              <span aria-hidden="true" class="chevron left"></span>
+              <span>prev</span>
+            </button>
+            <button
+              type="button"
+              style="
+                background: 0 0;
+                border: none;
+                text-decoration: none;
+                color: #606266;
+                font-weight: 700;
+                opacity: 0.5;
+                white-space: nowrap;
+                vertical-align: middle;
+              "
+              aria-controls="vgt-table"
+              class="footer__navigation__page-btn disabled"
+            >
+              <span>next</span>
+              <span aria-hidden="true" class="chevron right"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template #SalesReturn>
+      <div class="left" style="display: flex; margin: 25px">
+        <div class="magnifying-glass"></div>
+        <div class="form-group">
+          <input
+            id="email"
+            placeholder="Search this table"
+            class="form-control"
+            style="background: #fff"
+            type="email"
+          />
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" class="btn1" style="position: relative">
+              Reference
+            </th>
+            <th scope="col" class="btn1" style="position: relative">
+              Customer
+            </th>
+            <th scope="col" class="btn1" style="position: relative">Status</th>
+            <th scope="col" class="btn1" style="position: relative">
+              Grand Total
+            </th>
+            <th scope="col" class="btn1" style="position: relative">Paid</th>
+            <th scope="col" class="btn1" style="position: relative">Payment Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>#111</td>
+            <td>Phyliss J. Polite</td>
+            <td><span class="badge badge-outline-success">Completed</span></td>
+            <td>322</td>
+            <td>33</td>
+            <td><span class="badge badge-outline-success">Completed</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        class="lower"
+        style="display: flex; justify-content: space-between; margin: 25px"
+      >
+        <div class="left">
+          <label
+            for="vgt-select-rpp-505333257072"
+            style="font-size: 14px; color: #909399"
+            class="footer__row-count__label"
+            >Rows per page:</label
+          >
+          <select
+            id="vgt-select-rpp-505333257072"
+            autocomplete="off"
+            name="perPageSelect"
+            aria-controls="vgt-table"
+            style="
+              background-color: transparent;
+              width: auto;
+              padding: 0;
+              border: 0;
+              border-radius: 0;
+              height: auto;
+              font-size: 14px;
+              margin-left: 8px;
+              color: #606266;
+              font-weight: 700;
+              -webkit-appearance: auto !important;
+              -moz-appearance: auto !important;
+              appearance: auto !important;
+            "
+            class="footer__row-count__select"
+          >
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+            <option value="4">All</option>
+          </select>
+        </div>
+        <div class="right">
+          <div class="footer__navigation">
+            <div class="footer__navigation__page-info">
+              <div>1 - 4 of 4</div>
+            </div>
+            <button
+              type="button"
+              aria-controls="vgt-table"
+              class="footer__navigation__page-btn disabled"
+              style="
+                background: 0 0;
+                border: none;
+                text-decoration: none;
+                opacity: 0.5;
+                color: #606266;
+                font-weight: 700;
+                white-space: nowrap;
+                vertical-align: middle;
+              "
+            >
+              <span aria-hidden="true" class="chevron left"></span>
+              <span>prev</span>
+            </button>
+            <button
+              type="button"
+              style="
+                background: 0 0;
+                border: none;
+                text-decoration: none;
+                color: #606266;
+                font-weight: 700;
+                opacity: 0.5;
+                white-space: nowrap;
+                vertical-align: middle;
+              "
+              aria-controls="vgt-table"
+              class="footer__navigation__page-btn disabled"
+            >
+              <span>next</span>
+              <span aria-hidden="true" class="chevron right"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template #Purchase>
+      <div class="left" style="display: flex; margin: 25px">
+        <div class="magnifying-glass"></div>
+        <div class="form-group">
+          <input
+            id="email"
+            placeholder="Search this table"
+            class="form-control"
+            style="background: #fff"
+            type="email"
+          />
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" class="btn1" style="position: relative">
+              Reference
+            </th>
+            <th scope="col" class="btn1" style="position: relative">
+              Supplier
+            </th>
+            <th scope="col" class="btn1" style="position: relative">Status</th>
+            <th scope="col" class="btn1" style="position: relative">
+              Grand Total
+            </th>
+            <th scope="col" class="btn1" style="position: relative">Paid</th>
+            <th scope="col" class="btn1" style="position: relative">Due</th>
+            <th scope="col" class="btn1" style="position: relative">Payment Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>#111</td>
+            <td>Phyliss J. Polite</td>
+            <td><span class="badge badge-outline-success">Completed</span></td>
+            <td>322</td>
+            <td>33</td>
+            <td>300</td>
+            <td><span class="badge badge-outline-success">Completed</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        class="lower"
+        style="display: flex; justify-content: space-between; margin: 25px"
+      >
+        <div class="left">
+          <label
+            for="vgt-select-rpp-505333257072"
+            style="font-size: 14px; color: #909399"
+            class="footer__row-count__label"
+            >Rows per page:</label
+          >
+          <select
+            id="vgt-select-rpp-505333257072"
+            autocomplete="off"
+            name="perPageSelect"
+            aria-controls="vgt-table"
+            style="
+              background-color: transparent;
+              width: auto;
+              padding: 0;
+              border: 0;
+              border-radius: 0;
+              height: auto;
+              font-size: 14px;
+              margin-left: 8px;
+              color: #606266;
+              font-weight: 700;
+              -webkit-appearance: auto !important;
+              -moz-appearance: auto !important;
+              appearance: auto !important;
+            "
+            class="footer__row-count__select"
+          >
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+            <option value="4">All</option>
+          </select>
+        </div>
+        <div class="right">
+          <div class="footer__navigation">
+            <div class="footer__navigation__page-info">
+              <div>1 - 4 of 4</div>
+            </div>
+            <button
+              type="button"
+              aria-controls="vgt-table"
+              class="footer__navigation__page-btn disabled"
+              style="
+                background: 0 0;
+                border: none;
+                text-decoration: none;
+                opacity: 0.5;
+                color: #606266;
+                font-weight: 700;
+                white-space: nowrap;
+                vertical-align: middle;
+              "
+            >
+              <span aria-hidden="true" class="chevron left"></span>
+              <span>prev</span>
+            </button>
+            <button
+              type="button"
+              style="
+                background: 0 0;
+                border: none;
+                text-decoration: none;
+                color: #606266;
+                font-weight: 700;
+                opacity: 0.5;
+                white-space: nowrap;
+                vertical-align: middle;
+              "
+              aria-controls="vgt-table"
+              class="footer__navigation__page-btn disabled"
+            >
+              <span>next</span>
+              <span aria-hidden="true" class="chevron right"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template #PurchaseReturn>
+      <div class="left" style="display: flex; margin: 25px">
+        <div class="magnifying-glass"></div>
+        <div class="form-group">
+          <input
+            id="email"
+            placeholder="Search this table"
+            class="form-control"
+            style="background: #fff"
+            type="email"
+          />
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" class="btn1" style="position: relative">
+              Date
+            </th>
+            <th scope="col" class="btn1" style="position: relative">
+              Reference
+            </th>
+            <th scope="col" class="btn1" style="position: relative">Details</th>
+            <th scope="col" class="btn1" style="position: relative">
+              Amount
+            </th>
+            <th scope="col" class="btn1" style="position: relative">Category</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>2021-10-20</td>
+            <td>Phyliss J. Polite</td>
+            <td>Petrol</td>
+            <td>50</td>
+            <td>Petrol</td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        class="lower"
+        style="display: flex; justify-content: space-between; margin: 25px"
+      >
+        <div class="left">
+          <label
+            for="vgt-select-rpp-505333257072"
+            style="font-size: 14px; color: #909399"
+            class="footer__row-count__label"
+            >Rows per page:</label
+          >
+          <select
+            id="vgt-select-rpp-505333257072"
+            autocomplete="off"
+            name="perPageSelect"
+            aria-controls="vgt-table"
+            style="
+              background-color: transparent;
+              width: auto;
+              padding: 0;
+              border: 0;
+              border-radius: 0;
+              height: auto;
+              font-size: 14px;
+              margin-left: 8px;
+              color: #606266;
+              font-weight: 700;
+              -webkit-appearance: auto !important;
+              -moz-appearance: auto !important;
+              appearance: auto !important;
+            "
+            class="footer__row-count__select"
+          >
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+            <option value="4">All</option>
+          </select>
+        </div>
+        <div class="right">
+          <div class="footer__navigation">
+            <div class="footer__navigation__page-info">
+              <div>1 - 4 of 4</div>
+            </div>
+            <button
+              type="button"
+              aria-controls="vgt-table"
+              class="footer__navigation__page-btn disabled"
+              style="
+                background: 0 0;
+                border: none;
+                text-decoration: none;
+                opacity: 0.5;
+                color: #606266;
+                font-weight: 700;
+                white-space: nowrap;
+                vertical-align: middle;
+              "
+            >
+              <span aria-hidden="true" class="chevron left"></span>
+              <span>prev</span>
+            </button>
+            <button
+              type="button"
+              style="
+                background: 0 0;
+                border: none;
+                text-decoration: none;
+                color: #606266;
+                font-weight: 700;
+                opacity: 0.5;
+                white-space: nowrap;
+                vertical-align: middle;
+              "
+              aria-controls="vgt-table"
+              class="footer__navigation__page-btn disabled"
+            >
+              <span>next</span>
+              <span aria-hidden="true" class="chevron right"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</div>

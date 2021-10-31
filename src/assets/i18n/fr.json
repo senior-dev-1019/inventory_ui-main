@@ -1,0 +1,110 @@
+{
+  "LOGIN": {
+    "TITLE": "S'identifier",
+    "SELECT": "Change language",
+    "CREATE": "Créer un compte",
+    "FORGOT": "Mot de passe oublié",
+    "ADMIN": "Administratrice",
+    "SALES": "Ventes",
+    "PURCHASE": "Acheter"
+  },
+  "REGISTER": {
+    "TITLE": "Sign Up",
+    "EMAIL": "Connectez-vous avec e-mail",
+    "GOOGLE": "Connectez-vous avec Google",
+    "FACEBOOK": "Connectez-vous avec Facebook",
+    "FORGOT": "Mot de passe oublié",
+    "NAME": "votre nom",
+    "EMAIL_ADDRESS": "Adresse e-mail",
+    "PASSWORD": "Mot de passe",
+    "RETYPE": "Retaper le mot de passe"
+  },
+  "DASHBOARD": {
+    "TITLE": "Tableau de bord",
+    "VERSION": "Version 1",
+    "REVENUE": "Revenu",
+    "PURCHASE": "Achats",
+    "SALES_RETURN": "Retour des ventes",
+    "PROFIT": "Profit",
+    "WEEK": "Ventes et achats cette semaine",
+    "TOP": "Produits les plus vendus",
+    "Last_Month ": "Ventes du mois dernier",
+    "LAST_WEEK": "Ventes de la semaine dernière",
+    "TOP_SELLING": "Produits les plus vendus",
+    "MOST_SOLD": "Les plus vendus au cours des 7 derniers jours"
+  },
+  "HEADER": {
+    "POS": "PDV"
+  },
+  "PRODUCT": {
+    "TITLE": "Créer un produit",
+    "PRODUCT": "Produit",
+    "NAME": "Nom",
+    "CODE": "Code Produit",
+    "CATEGORY": "Catégorie",
+    "BRAND": "Marque",
+    "COST": "Coût",
+    "SALES": "Unité de vente",
+    "PRICE": "Prix",
+    "UNIT": "UNITÉ DE PRODUIT",
+    "SUBMIT": "Soumettre",
+    "TAX": "Taxe de commande",
+    "MULTIPLE_IMAGES": "Images multiples",
+    "LIST": "Liste de produits",
+    "IMAGE": "IMAGE",
+    "QUANTITY": "QUANTITÉ",
+    "ACTION": "action",
+    "PRINT_BARCODE": "Imprimer le code-barres"
+  },
+  "COMMON": {
+    "FILTER": "Filtre",
+    "CHOOSE": "Choisissez l'entrepôt",
+    "PDF": "PDF",
+    "ACTION": "action",
+    "EXCEL": "Exceller",
+    "IMPORT": "Importer des produits",
+    "CREATE": "Créer",
+    "PREV": "Précédente",
+    "DESCRIPTION":"La description",
+    "NEXT": "Prochaine",
+    "ROWS": "Lignes par page:",
+    "UPDATE": "Mettre à jour",
+    "PRINT": "Imprimer",
+    "RESET": "Réinitialiser",
+    "SIZE": "Taille de papier",
+    "DATE": "Date",
+    "REFERNCE": "Référence",
+    "WAREHOUSE": "Dépot",
+    "STOCK": "Stocker",
+    "TYPE": "Type",
+    "TOTAL": "Produits totaux",
+    "FROM":"De Dépot",
+    "TO":"À Dépot",
+    "NET_COST":"Coût unitaire net",
+    "QTY":"Qté",
+    "ITEMS":"Articles",
+    "GRAND":"Total",
+    "STATUS":"Statut",
+    "DISCOUNT":"Discount",
+    "TAX":"Impôt",
+    "SUBTOTAL":"Total",
+    "DETAILS":"Des détails",
+    "AMOUNT":"Montante"
+  },
+  "ADJUSTMENT": {
+    "NAME": "Ajustement",
+    "CREATE": "Créer Ajustement",
+    "LIST": "Ajustement Lister"
+  },
+  "TRANSFER": {
+    "NAME": "Transfert",
+    "CREATE": "Créer Transfert",
+    "LIST": "Transfert Lister"
+  },
+  "EXPENSES":{
+    "NAME":"Expenses",
+    "CREATE":"Créer Expenses",
+    "CATEGORY":"Catégorie de dépenses",
+    "LIST":"Expenses Lister"
+  }
+}

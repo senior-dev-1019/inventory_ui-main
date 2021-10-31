@@ -1,0 +1,101 @@
+<div class="breadcrumb">
+  <h1>{{ "PRODUCT.PRINT_BARCODE" | translate }}</h1>
+  <ul>
+    <li>
+      <a routerLink="/product" routerLinkActive="router-link-active">{{ "PRODUCT.PRODUCT" | translate }}</a>
+    </li>
+    <li>{{ "PRODUCT.PRINT_BARCODE" | translate }}</li>
+  </ul>
+</div>
+<div class="separator-breadcrumb border-top"></div>
+
+<div class="container">
+  <div class="header" style="width: 40%">
+    <label for="exampleDataList" class="form-label">{{ "COMMON.CHOOSE" | translate }}</label>
+    <input
+      class="form-control"
+      style="background: #f3f4f6"
+      list="datalistOptions"
+      id="exampleDataList"
+      placeholder="Type to search..."
+    />
+    <datalist id="datalistOptions">
+      <option value="Warehouse1"></option>
+      <option value="Warehouse2"></option>
+    </datalist>
+  </div>
+  <div class="search mb-3">
+    <legend>{{ "PRODUCT.PRODUCT" | translate }}</legend>
+    <i class="i-search"></i>
+    <input
+      role="combobox"
+      autocomplete="off"
+      autocapitalize="off"
+      autocorrect="off"
+      spellcheck="false"
+      aria-autocomplete="list"
+      aria-haspopup="listbox"
+      aria-owns="autocomplete-result-list-1"
+      aria-expanded="false"
+      aria-activedescendant=""
+      placeholder="Search Product by code or name"
+      aria-label="Search for a Product"
+      class="autocomplete-input"
+      style="
+        border: 1px solid #eee;
+        border-radius: 8px;
+        width: 100%;
+        padding: 12px 12px 12px 48px;
+        box-sizing: border-box;
+        position: relative;
+        font-size: 16px;
+        line-height: 1.5;
+        flex: 1;
+        background-color: #eee;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PGNpcmNsZSBjeD0iMTEiIGN5PSIxMSIgcj0iOCIvPjxwYXRoIGQ9Ik0yMSAyMWwtNC00Ii8+PC9zdmc+);
+        background-repeat: no-repeat;
+        background-position: 12px;
+      "
+    />
+  </div>
+  <div class="table-responsive">
+    <table class="table table-hover table-md">
+      <thead>
+        <tr>
+          <th scope="col">{{ "PRODUCT.PRODUCT" | translate }}</th>
+          <th scope="col">{{ "PRODUCT.CODE" | translate }}</th>
+          <th scope="col">{{ "PRODUCT.QUANTITY" | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="3">No data Available</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="header">
+    <div class="form-group mb-3">
+      <label for="picker1">{{ "COMMON.SIZE" | translate }}</label>
+      <select class="form-control">
+        <option>40 per sheet</option>
+        <option>30 per sheet</option>
+        <option>20 per sheet</option>
+      </select>
+    </div>
+    <div>
+      <button type="submit" class="btn btn-primary m-1">
+        <i class="i-Edit"></i>
+        {{ "COMMON.UPDATE" | translate }}
+      </button>
+      <button type="submit" class="btn btn-danger m-1">
+        <i class="i-Power-2"></i>
+        {{ "COMMON.RESET" | translate }}
+      </button>
+      <button value="Print" type="submit" class="btn btn-light pull-right m-1">
+        <i class="i-Billing"></i>
+        {{ "COMMON.PRINT" | translate }}
+      </button>
+    </div>
+  </div>
+</div>

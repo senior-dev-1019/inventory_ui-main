@@ -1,0 +1,197 @@
+<div class="breadcrumb">
+  <h1>{{ "PRODUCT.TITLE" | translate }}</h1>
+  <ul>
+    <li>
+      <a routerLink="/product" routerLinkActive="router-link-active">Product</a>
+    </li>
+    <li>{{ "PRODUCT.TITLE" | translate }}</li>
+  </ul>
+</div>
+
+<div class="separator-breadcrumb border-top"></div>
+
+<div class="row">
+  <div class="col-md-8">
+    <div class="card mb-4">
+      <div class="card-body">
+        <form>
+          <div class="row">
+            <div class="col-md-6 form-group mb-3">
+              <label for="firstName">{{ "PRODUCT.NAME" | translate }}</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                placeholder="Enter your first name"
+              />
+            </div>
+
+            <div class="col-md-6 form-group mb-3">
+              <label for="lastName">{{ "PRODUCT.CODE" | translate }}</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                placeholder="Enter your last name"
+              />
+            </div>
+
+            <div class="col-md-6 form-group mb-3">
+              <label for="picker1">{{ "PRODUCT.CATEGORY" | translate }}</label>
+              <select class="form-control form-control-rounded">
+                <option>Computer</option>
+                <option>Jacket</option>
+                <option>Shirts</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 form-group mb-3">
+              <label for="picker1">{{ "PRODUCT.BRAND" | translate }}</label>
+              <select class="form-control form-control-rounded">
+                <option>Adidas</option>
+                <option>Colgate</option>
+                <option>Shoes</option>
+                <option>huwaei</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 form-group mb-3">
+              <label for="picker1">Barcode Symbology</label>
+              <select class="form-control form-control-rounded">
+                <option>COde 128</option>
+                <option>Code 39</option>
+                <option>EAN8</option>
+                <option>UPC</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 form-group mb-3">
+              <label for="exampleInputEmail1">Product Cost</label>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Enter Product Cost"
+              />
+            </div>
+
+            <div class="col-md-6 form-group mb-3">
+              <label for="phone">Product Price</label>
+              <input
+                class="form-control"
+                id="phone"
+                placeholder="Enter phone"
+              />
+            </div>
+
+            <div class="col-md-6 form-group mb-3">
+              <label for="picker1">{{ "PRODUCT.UNIT" | translate }}</label>
+              <select class="form-control form-control-rounded">
+                <option>kilogram</option>
+                <option>Meter</option>
+                <option>Price</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 form-group mb-3">
+              <label for="picker1">{{ "PRODUCT.SALES" | translate }}</label>
+              <select class="form-control form-control-rounded">
+                <option>Sorry No Matching Option</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 form-group mb-3">
+              <label for="picker1">Purchase Unit</label>
+              <select class="form-control form-control-rounded">
+                <option>Sorry No Matching Option</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 form-group mb-3">
+              <label for="credit">Stock Alert</label>
+              <input
+                class="form-control"
+                id="credit"
+                value="0"
+                placeholder="Card"
+              />
+            </div>
+
+            <div class="col-md-6 form-group mb-3">
+              <label for="credit">{{ "PRODUCT.TAX" | translate }}</label>
+              <input
+                class="form-control"
+                value="1111"
+                placeholder="Web address"
+              />
+            </div>
+            <div class="col-md-6 form-group mb-3">
+              <label for="picker1">Tax Type</label>
+              <select class="form-control form-control-rounded">
+                <option>Exclusive</option>
+                <option>Inclusive</option>
+              </select>
+            </div>
+
+            <div class="col-md-12">
+              <btn-loading
+                btnClass="btn-primary btn-rounded"
+                [loading]="loading"
+                >{{ "PRODUCT.SUBMIT" | translate }}</btn-loading
+              >
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div
+      class="card"
+      style="display: flex; justify-content: center; align-items: center"
+    >
+      <div
+        class="header"
+        style="
+          background-color: rgba(10, 2, 30, 0.03);
+          padding: 10px;
+          width: -webkit-fill-available;
+          margin-bottom: 20px;
+        "
+      >
+        <h5>{{ "PRODUCT.MULTIPLE_IMAGES" | translate }}</h5>
+      </div>
+      <div
+        class="drop"
+        style="
+          width: 190px;
+          height: 180px;
+          border: 1px dashed #d6d6d6;
+          border-radius: 4px;
+          background-color: #fff;
+          margin: 20px 29px 20px 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <input type="file" style="display: none" #file multiple />
+        <p
+          style="
+            padding-top: 5px;
+            color: #777;
+            font-weight: 400;
+            cursor: pointer;
+            line-height: 1.5;
+          "
+          (click)="file.click()"
+        >
+          Drag & Drop Multiple images For product
+        </p>
+      </div>
+      <div style="display: flex;">
+          <input type="checkbox">
+          <p style="position:relative;left:5px">Product has multpile variants</p>
+      </div>
+    </div>
+  </div>
+</div>
